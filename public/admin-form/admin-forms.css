@@ -1,0 +1,144 @@
+
+/*==================================================================
+  Validation - error state
+===================================================================*/
+.admin-form .state-error .gui-input,
+.admin-form .state-error .gui-textarea,
+.admin-form .state-error.select > select,
+.admin-form .state-error.select-multiple > select,
+.admin-form .state-error input:hover + .checkbox,
+.admin-form .state-error input:hover + .radio,
+.admin-form .state-error input:focus + .checkbox,
+.admin-form .state-error input:focus + .radio,
+.admin-form .state-error .checkbox,
+.admin-form .state-error .radio {
+  background: #FEE9EA;
+  border-color: #DE888A;
+}
+.admin-form .state-error .gui-input:focus,
+.admin-form .state-error .gui-textarea:focus,
+.admin-form .state-error.select > select:focus,
+.admin-form .state-error.select-multiple > select:focus {
+  -webkit-box-shadow: 0px 0px 3px #DE888A inset;
+  -moz-box-shadow: 0px 0px 3px #DE888A inset;
+  -o-box-shadow: 0px 0px 3px #DE888A inset;
+  box-shadow: 0px 0px 3px #DE888A inset;
+}
+.admin-form .state-error .gui-input ~ .field-icon i,
+.admin-form .state-error .gui-textarea ~ .field-icon i {
+  color: #DE888A;
+}
+.admin-form .state-error.select .arrow {
+  color: #DE888A;
+}
+.admin-form .state-error.select > select:focus + .arrow {
+  color: #DE888A;
+}
+.admin-form .state-error .gui-input ~ .input-footer,
+.admin-form .state-error.file .gui-file:hover + .gui-input,
+.admin-form .state-error .gui-textarea ~ .input-footer {
+  border-color: #DE888A;
+}
+.admin-form .state-error + em {
+  display: block!important;
+  margin-top: 3px;
+  padding: 0 3px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  line-height: normal;
+  font-size: 0.85em;
+  color: #DE888A;
+}
+/*==================================================================
+  Validation - success state 
+===================================================================*/
+.admin-form .state-success .gui-input,
+.admin-form .state-success .gui-textarea,
+.admin-form .state-success.select > select,
+.admin-form .state-success.select-multiple > select,
+.admin-form .state-success input:hover + .checkbox,
+.admin-form .state-success input:hover + .radio,
+.admin-form .state-success input:focus + .checkbox,
+.admin-form .state-success input:focus + .radio,
+.admin-form .state-success .checkbox,
+.admin-form .state-success .radio {
+  background: #F0FEE9;
+  border-color: #A5D491;
+}
+.admin-form .state-success .gui-input:focus,
+.admin-form .state-success .gui-textarea:focus,
+.admin-form .state-success.select > select:focus,
+.admin-form .state-success.select-multiple > select:focus {
+  -webkit-box-shadow: 0px 0px 3px #A5D491 inset;
+  -moz-box-shadow: 0px 0px 3px #A5D491 inset;
+  -o-box-shadow: 0px 0px 3px #A5D491 inset;
+  box-shadow: 0px 0px 3px #A5D491 inset;
+}
+.admin-form .state-success .gui-input ~ .field-icon i,
+.admin-form .state-success .gui-textarea ~ .field-icon i {
+  color: #A5D491;
+}
+.admin-form .state-success.select .arrow {
+  color: #A5D491;
+}
+.admin-form .state-success.select > select:focus + .arrow {
+  color: #A5D491;
+}
+.admin-form .state-success .gui-input ~ .input-footer,
+.admin-form .state-success.file .gui-file:hover + .gui-input,
+.admin-form .state-success .gui-textarea ~ .input-footer {
+  border-color: #A5D491;
+}
+/*==================================================================
+  Smart Widget
+  * These widgets helps us to position an element, button,
+  * label or span. The positions can either be left or right
+  * while the input stays 100%. Use this to rapidly create
+  * search widgets, newsletter subscribe etc .
+====================================================================*/
+.admin-form.theme-primary .section-divider span {
+  color: #4a89dc;
+}
+.admin-form  .field {
+  width: 100%;
+}
+
+/* Section Divider */
+.admin-form .section-divider {
+  height: 0;
+  border-top: 1px solid #DDD;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.admin-form .section-divider span {
+  display: inline-block;
+  position: relative;
+  padding: 0 17px;
+  background: white;
+  color: #999;
+  top: -11px;
+  font-size: 15px;
+}
+.admin-form.panel .section-divider span,
+.admin-form .panel .section-divider span,
+.admin-form.tab-content .section-divider span,
+.admin-form .tab-content .section-divider span {
+  background: #fff;
+}
+.admin-form.bg-light .section-divider span,
+.admin-form .bg-light .section-divider span {
+  background: #FAFAFA;
+}
+.admin-form.bg-light.light .section-divider span,
+.admin-form .bg-light.light .section-divider span {
+  background: #FEFEFE;
+}
+.admin-form.bg-light.dark .section-divider span,
+.admin-form .bg-light.dark .section-divider span {
+  background: #F2F2F2;
+}
+.admin-form.well .section-divider span,
+.admin-form .well .section-divider span {
+  background: #f5f5f5;
+}

@@ -1,0 +1,147 @@
+.somosPage
+    .boxDetalle
+        padding: 2.5rem 0 6rem
+        background: url('/frontend/images/bgForm.png')
+        background-repeat: no-repeat
+        background-size: cover
+        @media screen and (min-width:992px)
+            padding: 5rem 0 6rem
+        .boxAnuncio
+            width: 100%
+            height: 220px
+            // background: #D0D0D0
+            background: black
+            border-radius: 10px
+            margin: 3rem 0
+            @media screen and (min-width:992px)
+                height: 480px
+                margin: 4.5rem 0
+        .gridSomos
+            display: grid
+            grid-template-columns: repeat(12, 1fr)
+            gap: 1rem
+            > div
+                &:nth-of-type(2)
+                    grid-column: 1 / -1
+                    padding: 2rem 0 0rem 0
+                    @media screen and (min-width:992px)
+                        grid-column: 7 / span 5
+                        padding: 5.85rem 0 0rem 0
+                    .boxDescripcion
+                        margin: 1.5rem 0 3rem 0
+                        @media screen and (min-width:992px)
+                            margin: 1.5rem 0
+                        p
+                            font-family: $poppins
+                            font-weight: 400
+                            color: $gris
+                            font-size: 16px
+                            line-height: 1.5em
+                    h2
+                        font-family: $barlow
+                        font-weight: 600
+                        font-size: 42px
+                        line-height: 1.15em
+                        color: $grisOscuro4
+                        position: relative
+                        &:before
+                            content: ''
+                            width: 85px
+                            height: 8px
+                            background: $rojo
+                            position: absolute
+                            left: 0
+                            bottom: -.75rem
+
+                &:nth-of-type(1)
+                    grid-column: 1 / -1
+                    @media screen and (min-width:992px)
+                        grid-column: 2 / span 5
+                    .boxDescripcion
+                        margin: 2rem 0
+                        p
+                            font-family: $poppins
+                            font-weight: 400
+                            color: $gris
+                            font-size: 16px
+                            line-height: 1.5em
+                    h4,
+                    h2
+                        font-family: $barlow
+                        font-weight: 600
+                        font-size: 52px
+                        line-height: 1.15em
+                        color: $grisOscuro4
+                    h4
+                        font-size: 42px
+                    h3
+                        font-family: $poppins
+                        font-weight: 500
+                        color: $rojo
+                        font-size: 14px
+                        line-height: 1.5em
+                    
+    .boxBanner
+        // padding-top: 8rem
+        padding-top: 5.5rem
+        @media screen and (min-width: 992px)
+            padding-top: 9rem
+        .owl-carouselBannerSomos
+            border: 0px solid red
+            .owl-dots
+                bottom: -2.5rem
+            .item
+                position: relative
+                .boxInfo
+                    position: absolute
+                    bottom: 4.95rem
+                    left: 1rem
+                    @media screen and (min-width: 992px)
+                        left: 5rem
+                        bottom: 8.95rem
+                    .boxDescripcion
+                        h1
+                            font-family: $barlow
+                            font-weight: 600
+                            font-size: 42px
+                            line-height: 1.15em
+                            color: white
+                            @media screen and (min-width: 992px)
+                                font-size: 62px
+                        p
+                            font-family: $poppins
+                            font-weight: 400
+                            color: white
+                            font-size: 14px
+                            line-height: 1.5em
+                            max-width: 553px
+                            width: 100%
+                            @media screen and (min-width: 992px)
+                                font-size: 18px
+                    .boxBreadcrumbs
+                        .breadCrumbs
+                            display: flex
+                            justify-content: flex-start
+                            align-items: center
+                            gap: .35rem
+                            svg
+                                fill: white
+                            a,
+                            p
+                                font-family: $poppins
+                                font-weight: 500
+                                color: white
+                                font-size: 12px
+                                line-height: 1.5em
+                                @media screen and (min-width: 992px)
+                                    font-size: 14px
+                .imageFullScreem
+                    width: 100%
+                    height: 434px
+                    @media screen and (min-width: 992px)
+                        height: 560px
+                    img
+                        width: 100%
+                        height: 100%
+                        // aspect-ratio: 1 / 1
+                        object-fit: cover

@@ -1,0 +1,671 @@
+.categoriaPage
+    .categoriaGrid
+        display: grid
+        grid-template-columns: repeat(12, 1fr)
+        padding: 1rem 0 3rem
+        gap: 1rem
+        @media screen and (min-width: 992px)
+            padding: 5rem 0 3rem
+        .boxFilters
+            grid-column: 1 / -1
+            // overflow: hidden
+            @media screen and (min-width: 992px)
+                grid-column: 1 / span 3
+                // overflow: auto
+            .borderFilter
+                border: 1px solid $grisClaro2
+                overflow: hidden
+                border-radius: 10px
+                background: $grisSuave
+            .boxViewOptionFilt
+                position: fixed
+                top: 0
+                left:0
+                width: 100%
+                display: none
+                opacity: 0
+                z-index: 1200
+                background: white
+                height: 100vh
+                overflow-y: scroll
+                @media screen and (min-width: 992px)
+                    position: relative
+                    width: auto
+                    display: block
+                    opacity: 1
+                    background: transparent
+                    height: auto
+                    overflow-y: auto
+                &.active
+                    display: block
+                    opacity: 1
+                .boxCloseFilter
+                    display: block
+                    padding: 1rem 1.5rem 0 
+                    @media screen and (min-width: 992px)
+                        display: none
+                    a
+                        display: inline-block
+                        svg
+                            width: 25px
+                            height: 25px
+                            color: $negroOscuro4
+                .boxButonMovil
+                    padding: 2rem 1rem
+                    display: block
+                    @media screen and (min-width: 992px)
+                        display: none
+                .accordion
+                    .accordion-item
+                        border: 0
+                        border-top: 1px solid $grisClaro2
+                        border-radius: 0
+                        .accordion-body
+                            padding: 2.5rem 1.5rem
+                            a
+                                text-decoration: none
+                                margin-bottom: .75rem
+                                display: block
+                                &:last-child
+                                    margin-bottom: 0
+                                &.active
+                                    .boxCheck
+                                        background: $grisOscuro5
+                                .boxCheck
+                                    width: 20px
+                                    height: 20px
+                                    border: 1px solid rgba($grisOscuro5,.2)
+                                    margin-right: .5rem
+                                    border-radius: 5px
+                                    transition: .5s ease-in-out background
+                                p
+                                    font-family: $poppins
+                                    font-weight: 500
+                                    font-size: 14px
+                                    line-height: 1.5em
+                                    color: $grisOscuro5
+                                   
+                        h2
+                            .accordion-button
+                                font-family: $poppins
+                                font-weight: 500
+                                font-size: 14px
+                                line-height: 1.5em
+                                color: $grisOscuro5
+                                &:not(.collapsed)
+                                    background-color: rgba($grisSuave,1)
+                                &:after
+                                    background: url('/frontend/images/arrow4.svg')
+                                    background-repeat: no-repeat
+                                    width: 21px
+                                    height: 17px
+                                    background-position: center
+                                &:focus
+                                    border-color: $grisClaro2
+                                    box-shadow: none
+                        // &:last-child
+                        //     border-bottom: 1px solid $grisClaro2                        
+                .boxRowFilter
+                    background: white
+                    padding: 1rem 1.5rem
+                    height: 126px
+                    box-sizing: border-box
+                    h3
+                        font-family: $poppins
+                        font-weight: 500
+                        font-size: 14px
+                        line-height: 1.5em
+                        color: $grisOscuro5
+                    .boxInputSearch
+                        position: relative
+                        margin-top: .75rem
+                        .iconSearch
+                            position: absolute
+                            top: 50%
+                            transform: translateY(-50%)
+                            right: 1rem
+                        input[type="text"]
+                            border: 1px solid $grisClaro2
+                            background: white
+                            border-radius: 10px
+                            width: 100%
+                            height: 42px
+                            box-sizing: border-box
+                            padding: .5rem .7rem
+                            font-family: $poppins
+                            font-weight: 400
+                            font-size: 14px
+                            line-height: 1.5em
+                            letter-spacing: -.05em
+                            color: $negroOscuro4
+                            &::placeholder
+                                color: rgba($grisOscuro5,.7)
+                        
+            .filterHead
+                padding: 2rem 1rem
+                display: flex
+                justify-content: space-between
+                align-items: center
+                a
+                    display: flex
+                    justify-content: flex-start
+                    align-items: center
+                    gap: .5rem
+                    p
+                        font-family: $poppins
+                        font-weight: 600
+                        font-size: 16px
+                        line-height: 1.5em
+                        color: $grisOscuro5
+        .listProducts
+            grid-column: 1 / -1
+            @media screen and (min-width: 992px)
+                grid-column: 4 / span 9
+            .viewProducts
+                display: grid
+                grid-template-columns: repeat(2, 1fr)
+                grid-template-rows: auto
+                gap: 1rem
+                margin: 1rem 0 0
+                @media screen and (min-width: 992px)
+                    grid-template-columns: repeat(3, 1fr)
+                    gap: 1.75rem
+                .cardProduct
+                    height: 350px
+                    box-sizing: border-box
+                    border: 1px solid $grisClaro2
+                    border-radius: 10px
+                    overflow: hidden
+                    @media screen and (min-width: 992px)
+                        height: 435px
+                    a
+                        display: block
+                        .boxInfo
+                            padding: 1rem 1rem 0
+                            h3
+                                font-family: $barlow
+                                font-size: 20px
+                                line-height: 1em
+                                color: $negroOscuro2
+                                text-align: center
+                                font-weight: 600
+                                letter-spacing: -.025em
+                                @media screen and (min-width: 992px)
+                                    font-size: 20px
+                                @media screen and (min-width: 1200px)
+                                    font-size: 24px
+
+                            p
+                                font-family: $poppins
+                                font-weight: 500
+                                font-size: 14px
+                                line-height: 1.5em
+                                color: $negroOscuro4
+                                text-align: center
+                                margin-top: .5rem
+                        .boxImage
+                            width: 100%
+                            height: 253px
+                            @media screen and (min-width: 992px)
+                                height: 328px
+                            img
+                                width: 100%
+                                height: 100%
+                                aspect-ratio: 2 / 1
+                                object-fit: cover
+            .boxHeader
+                border-radius: 10px
+                border: 1px solid $grisClaro2
+                background: $grisSuave
+                height: 62px
+                padding: 0 1rem
+                box-sizing: border-box
+                display: flex
+                justify-content: center
+                align-items: flex-start
+                flex-direction: column
+                flex-wrap: wrap
+                h2
+                    font-family: $poppins
+                    font-weight: 600
+                    font-size: 16px
+                    line-height: 1.5em
+                    color: $grisOscuro5
+
+
+.productoPage
+    border: 0px solid red
+    .boxDetail
+        // padding-top: 10rem
+        padding-top: 5rem
+        @media screen and (min-width: 992px)
+            padding-top: 15rem
+        .detailGrid
+            display: grid
+            grid-template-columns: repeat(12, 1fr)
+            align-items: start
+            gap: 1rem
+            
+            .boxCaracteristicasProducto
+                grid-column: 1 / -1
+                @media screen and (min-width:992px)
+                    grid-column: 7 / -1
+                .boxCompra
+                    display: grid
+                    grid-template-columns: repeat(6, 1fr)
+                    margin-top: 2rem
+                    gap: 1rem
+                    margin-bottom: 4rem
+                    @media screen and (min-width: 992px)
+                        margin-bottom: 0rem
+                    .boxAsesor
+                        grid-column: 1 / -1
+                        @media screen and (min-width: 992px)
+                            grid-column: 4 / -1
+                        a
+                            width: 100%
+                            height: 57px
+                            background: $verdeClaro2
+                            border-radius: 10px
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            gap: .5rem
+                            border: 0
+                            @media screen and (min-width: 992px)
+                                max-width: 295px
+                                width: 100%
+                            p
+                                font-family: $poppins
+                                font-weight: 500
+                                color: white
+                                font-size: 14px
+                                line-height: 1.5em
+                                text-align: center
+                                text-transform: uppercase
+                    .boxCotizacion
+                        grid-column: 1 / -1
+                        margin-top: 1rem
+                        @media screen and (min-width: 992px)
+                            grid-column: 4 / -1
+                            margin-top: 2rem
+                        button
+                            width: 100%
+                            height: 57px
+                            background: $grisOscuro5
+                            border-radius: 10px
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            gap: .5rem
+                            border: 0
+                            @media screen and (min-width: 992px)
+                                max-width: 295px
+                                width: 100%
+                            p
+                                font-family: $poppins
+                                font-weight: 500
+                                color: white
+                                font-size: 14px
+                                line-height: 1.5em
+                                text-align: center
+                                text-transform: uppercase
+                    .boxSelectorCantidad
+                        grid-column: 1 / -1
+                        @media screen and (min-width:992px)
+                            grid-column: 2 / span 2
+                        p
+                            font-family: $poppins
+                            font-weight: 600
+                            color: $grisOscuro5
+                            font-size: 16px
+                            line-height: 1.5em
+                            text-align: left
+                            display: none
+                            @media screen and (min-width: 992px)
+                                display: inline-block
+                        .boxCantidad
+                            display: flex
+                            justify-content: space-between
+                            align-items: center
+                            margin-top: .5rem
+                            width: 190px
+                            margin: auto
+                            gap: .5rem
+                            @media screen and (min-width: 992px)
+                                width: auto
+                            .boxNumber
+                                font-family: $poppins
+                                font-weight: 500
+                                color: black
+                                font-size: 24px
+                                line-height: 1.5em
+                                text-align: center
+                                background: white
+                                width: 60px
+                                height: 57px
+                                border-radius: 10px
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                flex-direction: column
+                            a
+                                width: 60px
+                                height: 57px
+                                box-sizing: border-box
+                                background: $grisOscuro5
+                                border-radius: 10px
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                flex-direction: column
+                                font-family: $poppins
+                                font-weight: 500
+                                color: white
+                                font-size: 24px
+                                line-height: 1.5em
+                                text-align: center
+                .boxFileDownload
+                    margin-top: 1.75rem
+                    border: 0px solid red
+                    @media screen and (min-width: 992px)
+                        margin-top: 1rem
+                    a
+                        display: flex
+                        width: 100%
+                        height: 57px
+                        border-radius: 10px
+                        background: $gris
+                        justify-content: center
+                        align-items: center
+                        gap: .5rem
+                        @media screen and (min-width: 992px)
+                            width: 295px
+                        p
+                            font-family: $poppins
+                            font-weight: 600
+                            color: white
+                            font-size: 14px
+                            line-height: 1.5em
+                            text-align: left
+                .accordion
+                    margin-top: 1.5rem
+                    .accordion-item
+                        border: 1px solid $grisClaro2
+                        border-radius: 10px
+                        overflow: hidden
+                        margin-bottom: .15rem
+                        &.active
+                            border: 1px solid $verdeClaro
+                        .accordion-collapse
+                            .accordion-body
+                                p
+                                    font-family: $poppins
+                                    font-weight: 500
+                                    color: $gris
+                                    font-size: 14px
+                                    line-height: 1.5em
+                                    text-align: left
+                        .accordion-header
+                            .accordion-button
+                                color: $grisOscuro5
+                                font-family: $poppins
+                                font-weight: 600
+                                font-size: 16px
+                                line-height: 1.5em
+                                text-align: left
+                                &:focus
+                                    border-color: transparent
+                                    box-shadow: none  
+                                &:not(.collapsed)
+                                    box-shadow: none
+                                    background-color: white
+                                    
+                                &::after
+                                    background-image: url('/frontend/images/arrow4.svg')
+                .boxTitle
+                    h1
+                        font-family: $barlow
+                        font-weight: 600
+                        font-size: 32px
+                        line-height: .95em
+                        color: $negroOscuro2
+                        margin: 0 0 .25rem 0
+                        text-align: center
+                        @media screen and (min-width: 992px)
+                            font-size: 42px
+                            text-align: left
+                    h2
+                        font-family: $poppins
+                        font-weight: 500
+                        color: $negroOscuro4
+                        font-size: 18px
+                        line-height: 1.5em
+                        text-align: center
+                        margin: 0
+                        @media screen and (min-width: 992px)
+                            text-align: left
+                .boxEtiqueta
+                    min-width: 137px
+                    height: 33px
+                    background: $grisOscuro5
+                    border: 0
+                    display: none
+                    padding: .5rem 1rem
+                    margin-bottom: 1rem
+                    @media screen and (min-width: 992px)
+                        display: inline-block
+                    h3
+                        font-family: $poppins
+                        font-weight: 500
+                        color: $grisOscuro6
+                        font-size: 14px
+                        line-height: 1.5em
+                        text-align: center
+                        margin: 0
+
+            .boxGallery
+                grid-column: 1 / -1
+                border: 0px solid red
+                padding: 0 0 4.5rem 0
+                @media screen and (min-width: 992px)
+                    grid-column: 1 / span 6
+                .boxBreadcrumb
+                    display: block
+                    @media screen and (min-width: 992px)
+                        display: none
+                    .breadcrumb
+                        display: flex
+                        justify-content: flex-start
+                        align-items: center
+                        gap: .35rem
+                        p
+                            font-family: $poppins
+                            font-weight: 600
+                            color: $gris
+                            font-size: 14px
+                            line-height: 1.5em
+                .owl-carouselInterno2
+                    border: 0px solid red
+                    margin: 1rem 0 0
+                    display: none
+                    @media screen and (min-width: 992px)
+                        display: block
+                    .owl-nav
+                        .owl-prev,
+                        .owl-next
+                            bottom: -3.95rem
+                            top: auto
+                            left: auto
+                            transform: translate(0,0)
+                            span
+                                opacity: 1
+                            &.disabled
+                                span
+                                    background: url("/frontend/images/arrow.png")
+                                    opacity: .35
+                            &:hover
+                                span
+                                    // opacity: 1
+                                    transform: scale(.75)
+                        .owl-prev
+                            right: 3rem
+                        .owl-next
+                            right: 0rem
+                            span,
+                            &:hover span
+                                transform: scale(.75) scaleX(-1)
+                            
+                            
+                    .item
+                        .imageFullScreem
+                            width: 100%
+                            height: 114px
+                            border: 1px solid $grisClaro2
+                            border-radius: 10px
+                            overflow: hidden
+                            img
+                                width: 100%
+                                height: 100%
+                                aspect-ratio: 1 / 1
+                                object-fit: cover
+                .owl-carouselInterno
+                    border: 0px solid red
+                    display: none
+                    @media screen and (min-width: 992px)
+                        display: block
+                    .owl-dots
+                        bottom: -2.5rem
+                    .item
+                        .imageFullScreem
+                            width: 100%
+                            height: 434px
+                            border: 1px solid $grisClaro2
+                            border-radius: 10px
+                            overflow: hidden
+                            @media screen and (min-width: 992px)
+                                height: 480px
+                            @media screen and (min-width: 1200px)
+                                height: 600px
+                            @media screen and (min-width: 1400px)
+                                height: 680px
+                            img
+                                width: 100%
+                                height: 100%
+                                // aspect-ratio: 1 / 1
+                                object-fit: cover
+                .owl-carouselInterno3
+                    border: 0px solid red
+                    display: block
+                    @media screen and (min-width: 992px)
+                        display: none
+                    .owl-dots
+                        bottom: -2.5rem
+                    .item
+                        .imageFullScreem
+                            width: 100%
+                            height: 434px
+                            border: 1px solid $grisClaro2
+                            border-radius: 10px
+                            overflow: hidden
+                            @media screen and (min-width: 992px)
+                                height: 480px
+                            @media screen and (min-width: 1200px)
+                                height: 600px
+                            @media screen and (min-width: 1400px)
+                                height: 680px
+                            img
+                                width: 100%
+                                height: 100%
+                                // aspect-ratio: 1 / 1
+                                object-fit: cover
+        
+
+.componentComplementario
+    padding-bottom: 8rem
+    .gridComplementario
+        display: grid
+        grid-template-columns: repeat(12, 1fr)
+        .listProducts
+            grid-column: 1 / -1
+            margin-top: 1.5rem
+            .owl-carouselComplementario
+                border: 0px solid red
+                margin: 1rem 0 0
+                .owl-dots
+                    bottom: -2.5rem
+                .owl-nav
+                    .owl-prev,
+                    .owl-next
+                        bottom: -3.95rem
+                        top: auto
+                        left: auto
+                        transform: translate(0,0)
+                        span
+                            opacity: 1
+                        &.disabled
+                            span
+                                background: url("/frontend/images/arrow.png")
+                                opacity: .35
+                        &:hover
+                            span
+                                // opacity: 1
+                                transform: scale(.75)
+                    .owl-prev
+                        right: 3rem
+                    .owl-next
+                        right: 0rem
+                        span,
+                        &:hover span
+                            transform: scale(.75) scaleX(-1)
+                        
+                        
+                .item
+                    border: 1px solid $grisClaro2
+                    border-radius: 10px
+                    overflow: hidden
+                    .boxInfo
+                        padding: 1rem 1rem
+                        h3
+                            font-family: $barlow
+                            font-size: 20px
+                            line-height: .9em
+                            color: $negroOscuro2
+                            text-align: center
+                            margin-bottom: .25rem
+                            @media screen and (min-width:992px)
+                                font-size: 24px
+                        p
+                            font-family: $poppins
+                            font-weight: 500
+                            font-size: 14px
+                            line-height: 1.15em
+                            text-align: center
+                    .imageFullScreem
+                        width: 100%
+                        height: 240px
+                        @media screen and (min-width:992px)
+                            height: 380px
+                        img
+                            width: 100%
+                            height: 100%
+                            aspect-ratio: 1 / 1
+                            object-fit: cover
+        .boxSubTitle
+            grid-column: 1 / -1
+            border-bottom: 1px solid $grisClaro2
+            padding: 0 0 1.5rem 0
+            h2
+                font-family: $barlow
+                font-size: 42px
+                line-height: .9em
+                position: relative
+                &:before
+                    content: ''
+                    position: absolute
+                    bottom: -.8rem
+                    left: 0
+                    width: 85px
+                    height: 8px
+                    background: $rojo
+

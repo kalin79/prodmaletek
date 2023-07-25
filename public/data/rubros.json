@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Minería e Industria Pesada",
+        "slug": "/rubro/mineria-industrial-pesada",
+        "imagen": "/frontend/images/mineria.png",
+        "banner": "/frontend/images/bgmineria.png"
+    },
+    {
+        "name": "Alimentos",
+        "slug": "/rubro/alimentos",
+        "imagen": "/frontend/images/alimentos.png",
+        "banner": "/frontend/images/bgalimentos.png"
+    },
+    {
+        "name": "Construcción",
+        "slug": "/rubro/construccion",
+        "imagen": "/frontend/images/contruccion.png",
+        "banner": "/frontend/images/bgcontruccion.png"
+    },
+    {
+        "name": "Entretenimiento y recreación",
+        "slug": "/rubro/entretenimiento-recreacion",
+        "imagen": "/frontend/images/entretenimiento.png",
+        "banner": "/frontend/images/bgentretenimiento.png"
+    },
+    {
+        "name": "Educación",
+        "slug": "/rubro/educacion",
+        "imagen": "/frontend/images/educacion.png",
+        "banner": "/frontend/images/bgeducacion.png"
+    },
+    {
+        "name": "Agroindustria y Avícola",
+        "slug": "/rubro/agroindustria-avicola",
+        "imagen": "/frontend/images/avicola.png",
+        "banner": "/frontend/images/bgavicola.png"
+    }
+]

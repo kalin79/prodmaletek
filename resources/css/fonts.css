@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'DINOTBOLD';
+    src: url('../fonts/dinot/DINOT-Bold.eot');
+    src: url('../fonts/dinot/DINOT-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/dinot/DINOT-Bold.woff2') format('woff2'),
+        url('../fonts/dinot/DINOT-Bold.woff') format('woff'),
+        url('../fonts/dinot/DINOT-Bold.ttf') format('truetype'),
+        url('../fonts/dinot/DINOT-Bold.svg#DINOT-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DINOTLIGHT';
+    src: url('../fonts/dinot/DINOT-Light.eot');
+    src: url('../fonts/dinot/DINOT-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/dinot/DINOT-Light.woff2') format('woff2'),
+        url('../fonts/dinot/DINOT-Light.woff') format('woff'),
+        url('../fonts/dinot/DINOT-Light.ttf') format('truetype'),
+        url('../fonts/dinot/DINOT-Light.svg#DINOT-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DINOTMEDIUM';
+    src: url('../fonts/dinot/DINOT-Medium.eot');
+    src: url('../fonts/dinot/DINOT-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/dinot/DINOT-Medium.woff2') format('woff2'),
+        url('../fonts/dinot/DINOT-Medium.woff') format('woff'),
+        url('../fonts/dinot/DINOT-Medium.ttf') format('truetype'),
+        url('../fonts/dinot/DINOT-Medium.svg#DINOT-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DINProBOLD';
+    src: url('../fonts/dinot/DINPro-Bold.eot');
+    src: url('../fonts/dinot/DINPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/dinot/DINPro-Bold.woff2') format('woff2'),
+        url('../fonts/dinot/DINPro-Bold.woff') format('woff'),
+        url('../fonts/dinot/DINPro-Bold.ttf') format('truetype'),
+        url('../fonts/dinot/DINPro-Bold.svg#DINPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DINPro';
+    src: url('../fonts/dinot/DINPro.eot');
+    src: url('../fonts/dinot/DINPro.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/dinot/DINPro.woff2') format('woff2'),
+        url('../fonts/dinot/DINPro.woff') format('woff'),
+        url('../fonts/dinot/DINPro.ttf') format('truetype'),
+        url('../fonts/dinot/DINPro.svg#DINPro') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'DINOTREGULAR';
+    src: url('../fonts/dinot/DINOT-Regular.eot');
+    src: url('../fonts/dinot/DINOT-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/dinot/DINOT-Regular.woff2') format('woff2'),
+        url('../fonts/dinot/DINOT-Regular.woff') format('woff'),
+        url('../fonts/dinot/DINOT-Regular.ttf') format('truetype'),
+        url('../fonts/dinot/DINOT-Regular.svg#DINOT-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+     font-family: 'RussoOne';
+     src: url('../fonts/russo/RussoOne-Regular.eot');
+     src: url('../fonts/russo/RussoOne-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/russo/RussoOne-Regular.woff2') format('woff2'),
+         url('../fonts/russo/RussoOne-Regular.woff') format('woff'),
+         url('../fonts/russo/RussoOne-Regular.ttf') format('truetype'),
+         url('../fonts/russo/RussoOne-Regular.svg#RussoOne-Regular') format('svg');
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+}
+
+@font-face {
+     font-family: 'PoppinsRegular';
+     src: url('../fonts/poppins/Poppins-Regular.eot');
+     src: url('../fonts/poppins/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/poppins/Poppins-Regular.woff2') format('woff2'),
+         url('../fonts/poppins/Poppins-Regular.woff') format('woff'),
+         url('../fonts/poppins/Poppins-Regular.ttf') format('truetype'),
+         url('../fonts/poppins/Poppins-Regular.svg#Poppins-Regular') format('svg');
+     font-weight: normal;
+     font-style: normal;
+     font-display: swap;
+}
+ 
+@font-face {
+     font-family: 'PoppinsBold';
+     src: url('../fonts/poppins/Poppins-Bold.eot');
+     src: url('../fonts/poppins/Poppins-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/poppins/Poppins-Bold.woff2') format('woff2'),
+         url('../fonts/poppins/Poppins-Bold.woff') format('woff'),
+         url('../fonts/poppins/Poppins-Bold.ttf') format('truetype'),
+         url('../fonts/poppins/Poppins-Bold.svg#Poppins-Bold') format('svg');
+     font-weight: bold;
+     font-style: normal;
+     font-display: swap;
+}
+ 
+@font-face {
+     font-family: 'PoppinsSemiBold';
+     src: url('../fonts/poppins/Poppins-SemiBold.eot');
+     src: url('../fonts/poppins/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/poppins/Poppins-SemiBold.woff2') format('woff2'),
+         url('../fonts/poppins/Poppins-SemiBold.woff') format('woff'),
+         url('../fonts/poppins/Poppins-SemiBold.ttf') format('truetype'),
+         url('../fonts/poppins/Poppins-SemiBold.svg#Poppins-SemiBold') format('svg');
+     font-weight: 600;
+     font-style: normal;
+     font-display: swap;
+}
+ 
+@font-face {
+     font-family: 'PoppinsMedium';
+     src: url('../fonts/poppins/Poppins-Medium.eot');
+     src: url('../fonts/poppins/Poppins-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/poppins/Poppins-Medium.woff2') format('woff2'),
+         url('../fonts/poppins/Poppins-Medium.woff') format('woff'),
+         url('../fonts/poppins/Poppins-Medium.ttf') format('truetype'),
+         url('../fonts/poppins/Poppins-Medium.svg#Poppins-Medium') format('svg');
+     font-weight: 500;
+     font-style: normal;
+     font-display: swap;
+}

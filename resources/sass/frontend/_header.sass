@@ -1,0 +1,250 @@
+.HeaderMainMovil
+    position: fixed
+    width: 100%
+    z-index: 1000
+    display: block
+    @media screen and (min-width: 992px)
+        display: none
+    .boxSearchMain
+        background: $gris
+        padding: 1rem 1rem
+        .inputSearch
+            position: relative
+            width: 100%
+            height: 45px
+            border-radius: 38px
+            background: white
+            border: 1px solid $grisClaro
+            overflow: hidden
+            a
+                position: absolute
+                right: 11px
+                top: 2px
+                width: 38px
+                height: 38px
+                background: $rojo
+                border-radius: 50%
+                display: flex
+                align-items: center
+                justify-content: center
+                flex-direction: column
+                img
+                    margin: auto
+                    text-align: center
+            input
+                width: 100%
+                height: 100%
+                border: 0
+                box-sizing: border-box
+                padding: 0rem 3.35rem 0 1.5rem
+    .boxHeaderTop
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        background: $rojo
+        padding: 1rem 1rem
+        position: relative
+        z-index: 3
+        .optionNav
+            position: absolute
+            height: 100vh
+            width: 100vw
+            background: $gris
+            padding: 1rem 0rem
+            box-sizing: border-box
+            transform: translateY(-100%)
+            transition: .5s ease-in-out transform
+            overflow-y: scroll 
+            &.active
+                transform: translateY(0)
+            .boxRedesSociales
+                display: flex
+                justify-content: flex-start
+                align-items: center
+                gap: 1rem
+                padding: 1rem 1rem
+            .boxAtencion
+                margin: 1rem 1rem
+                width: 265px
+                height: 62px
+                box-sizing: border-box
+                background: $verde
+                border-radius: 5px
+                display: flex
+                justify-content: center
+                align-items: center
+                gap: .5rem
+                .boxInfo
+                    h2,p
+                        font-family: $poppins
+                        font-size: 14px
+                        color: white
+                        font-weight: 400
+                        text-align: left
+                    p
+                        font-size: 18px
+                        font-weight: 500
+                .boxIcon
+                    width: 42px
+                    height: 42px
+                    img
+                        width: 100%
+            .boxListaUno,
+            .boxListaDos
+                margin: 3rem 0 0
+                border-top: 1px solid $rojo
+                nav
+                    padding: 2rem 1rem 2.5rem
+                    display: flex
+                    flex-direction: column
+                    gap: 1rem
+                    a
+                        font-family: $poppins
+                        font-size: 16px
+                        color: white
+                        font-weight: 400
+                        text-align: left
+                        br
+                            display: none
+            .boxListaDos
+                margin: 0
+                        
+        .boxHamburger
+            grid-column: 1 / span 1
+            .hambergeMenu
+                width: 28px
+                height: 28px
+                position: relative
+                border: 0
+                background: transparent
+                .lineMenu
+                    position: absolute
+                    top: 0
+                    left: 0
+                    width: 100%
+                    height: 2px
+                    background: white
+                    &:nth-of-type(1)
+                        top: 4px
+                    &:nth-of-type(2)
+                        width: 100%
+                        top: 12px
+                    &:nth-of-type(3)
+                        top: 20px
+                        
+        .boxLogoMain
+            grid-column: 2 / -1
+            position: relative
+            left: -2.75rem
+            z-index: 2
+            a
+                img
+                    width: 100%
+                    height: auto
+                    object-fit: contain
+
+.HeaderMainPC
+    position: absolute
+    width: 100%
+    z-index: 1000
+    display: none
+    @media screen and (min-width: 992px)
+        display: block
+    .headerBottom
+        background: $gris
+        padding: 1rem 0
+        .navNavegation
+            display: grid
+            grid-template-columns: repeat(12, 1fr)
+            .boxSearch
+                grid-column: 10 / span 3
+                .inputSearch
+                    position: relative
+                    width: 100%
+                    height: 45px
+                    border-radius: 38px
+                    background: white
+                    border: 1px solid $grisClaro
+                    overflow: hidden
+                    a
+                        position: absolute
+                        right: 11px
+                        top: 2px
+                        width: 38px
+                        height: 38px
+                        background: $rojo
+                        border-radius: 50%
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        flex-direction: column
+                        img
+                            margin: auto
+                            text-align: center
+                    input
+                        width: 100%
+                        height: 100%
+                        border: 0
+                        box-sizing: border-box
+                        padding: 0rem 3.35rem 0 1.5rem
+
+            nav
+                grid-column: 1 / span 9
+                display: flex
+                align-items: center
+                justify-content: left
+                gap: 2rem
+                a
+                    font-family: $poppins
+                    font-size: 14px
+                    color: white
+                    font-weight: 400
+                    text-align: center
+    .headerTop
+        background: $rojo
+        padding: 1rem 0
+        nav
+            display: grid
+            grid-template-columns: repeat(12, 1fr)
+            .boxNavMain
+                grid-column: 1 / span 10
+                display: flex
+                align-items: center
+                justify-content: left
+                gap: 2rem
+                a
+                    span
+                        font-family: $poppins
+                        font-size: 13px
+                        color: white
+                        font-weight: 600
+                    &.especial
+                        margin-right: 1rem
+                        position: relative
+                        &:before
+                            content: ''
+                            position: absolute
+                            top: -6px
+                            right: -25px
+                            width: 1px
+                            height: 35px
+                            background: rgba(white,.8)
+                        span
+                            font-family: $barlow
+                            font-weight: 400
+            .boxAtencion
+                justify-self: end
+                grid-column: 11 / span 2
+                .atencionContent
+                    display: flex
+                    align-items: center
+                    justify-content: left
+                    gap: .75rem
+                    .info
+                        p
+                            font-family: $poppins
+                            font-size: 13px
+                            color: white
+                            font-weight: 600
+
+
+                    

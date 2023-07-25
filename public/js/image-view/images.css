@@ -1,0 +1,118 @@
+/*styles for edit images*/
+.image-edit {
+    width: 140px;
+    height: 180px;
+    margin: 0 auto;
+    background: #FFF;
+    padding: 5px;
+    border: 1px solid #e7e7e7;
+    position: relative;
+}
+
+.container-img{
+    width: 100%;
+    height: 145px;
+    border: 1px solid #e7e7e7;
+}
+
+.container-img img{
+    width:100%;
+    height: 100%;
+}
+
+.text-description{
+    text-align:center;
+}
+
+.hover-img{
+    text-align: center;
+    position:absolute;
+    width: 100%;
+    height:100%;
+    top:0;
+    left:0;
+    opacity: 0;
+    transition:all 0.6s linear;
+    background:url('../../images/shadow-black.png') repeat;
+}
+
+.image-edit:hover .hover-img{
+    opacity: 1;
+}
+
+.hover-img li{
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    
+}
+.link-control ul{
+    padding: 0;
+    list-style: none;
+}
+.link-control{
+    margin-top: 50px;
+}
+
+
+.hover-img li a{
+    padding-top: 2px;
+    padding-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;    
+    text-align: center;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #FFF;  
+    transition:all 0.6s linear;
+}
+.hover-img li a:hover{
+    transform: scale(1.2); 
+}
+
+.hover-img li a.delete-file{
+    background-color: #e9573f;
+}
+
+.hover-img li a.view-img-buttom{
+    background-color: #5d9cec;
+}
+
+.container-img span{
+    display: block;
+    text-align: center;
+    margin-top: 25%;
+}
+
+.none{
+    display:none;
+}
+
+.delete-file-conntainer{
+    position:absolute;
+    width:100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background:url('../../images/shadow-black.png') repeat; 
+}
+
+.container-trash{
+    font-size:30px;
+}
+
+.refresh-file{
+    font-size: 30px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 35%;
+}
+
+.container-refresh{
+    text-align: center;
+}
+
+.image-edit ul{
+    list-style:none;
+}

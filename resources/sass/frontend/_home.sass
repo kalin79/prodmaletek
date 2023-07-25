@@ -1,0 +1,405 @@
+.homeSomos
+    margin-bottom: 6rem
+    .boxContent
+        margin-top: -6rem
+        position: relative
+        z-index: 2
+        @media screen and (min-width:992px)
+            margin-top: -4rem
+        .boxCard
+            width: 100%
+            border-radius: 10px
+            box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.05)
+            background: white
+            height: auto
+            display: grid
+            grid-template-columns: repeat(12, 1fr)
+            align-items: start
+            box-sizing: border-box
+            padding: 4rem 2rem 3rem
+            @media screen and (min-width:992px)
+                padding: 6rem 3rem 1rem
+                height: 672px
+            .cardItem
+                &:nth-of-type(1)
+                    grid-column: 1 / -1
+                    @media screen and (min-width:992px)
+                        grid-column: 1 / span 5
+                    h3
+                        font-family: $barlow
+                        font-weight: 600
+                        font-size: 42px
+                        letter-spacing: -0.04em
+                        line-height: .95em
+                        color: $gris
+                        text-align: left
+                &:nth-of-type(2)
+                    grid-column: 1 / -1
+                    margin-top: 1.25rem
+                    @media screen and (min-width:992px)
+                        grid-column: 7 / span 6
+                    p
+                        font-family: $poppins
+                        font-weight: 500
+                        font-size: 16px
+                        letter-spacing: 0.03em
+                        line-height: 1.5em
+                        color: $grisOscuro4
+                        text-align: left
+                        margin-bottom: 2rem
+                    button
+                        @include btnBox(white, $rojo)
+                &:nth-of-type(3)
+                    grid-column: 1 / -1
+                    margin-top: 3rem
+                    .boxLogos
+                        // display: flex
+                        // justify-content: space-between
+                        // align-items: center
+                        // gap: 1rem
+                        margin-top: 4rem
+                        
+                        img
+                            width: auto
+                            object-fit: contain
+
+                    h4
+                        font-family: $barlow
+                        font-weight: 600
+                        font-size: 22px
+                        letter-spacing: -0.04em
+                        line-height: .95em
+                        color: $negroOscuro2
+                        text-align: left
+                        position: relative
+                        &::before
+                            content: ''
+                            position: absolute
+                            bottom: -1rem
+                            left: 0
+                            width: 85px
+                            height: 8px
+                            background: $rojo
+    .bcg
+        width: 100%
+        height: 580px
+        img
+            width: 100%
+            height: 100%
+            aspect-ratio: 2 / 1
+            object-fit: cover
+            object-position: -938px 0px
+            @media screen and (min-width:992px)
+                object-position: center
+                    
+
+.homeBlog
+    width: 100%
+    height: auto
+    padding: 6rem 0 4rem
+    position: relative
+    margin-top: 4rem
+    @media screen and (min-width:992px)
+        height: 580px
+    .container
+        position: relative
+        z-index: 2
+        height: 100%
+        .gridBlog
+            display: grid
+            grid-template-columns: repeat(12, 1fr)
+            align-items: center
+            height: 100%
+            .boxContent
+                grid-column: 1 / -1
+                @media screen and (min-width:992px)
+                    grid-column: 1 / span 5
+                h2
+                    font-family: $barlow
+                    font-weight: 600
+                    font-size: 42px
+                    letter-spacing: -0.03em
+                    line-height: .95em
+                    color: white
+                    text-align: left
+                    margin-bottom: 1.5rem
+                p
+                    font-family: $poppins
+                    font-weight: 400
+                    font-size: 16px
+                    letter-spacing: 0.03em
+                    line-height: 1.5em
+                    color: white
+                    text-align: left
+                    margin-bottom: 2.25rem
+
+                button
+                    @include btnBox(white,$rojo)
+    .bcg
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+
+.homePublicidad
+    padding: 0 0 3rem
+    .container
+        margin: auto
+        text-align: center
+        img
+            width: 358px
+            height: 266px
+            aspect-ratio: 1 / 1
+            object-fit: cover
+            @media screen and (min-width:992px)
+                width: 100%
+                height: 205px
+.homeLineaProducto
+    border: 0px solid $rojo
+    padding: 3rem 0 8rem
+    @media screen and (min-width:992px)
+        padding: 3rem 0
+    .gridLinea
+        display: grid
+        grid-template-columns: repeat(12, 1fr)
+        align-items: center
+        .itemLinea
+            &:nth-of-type(1)
+                grid-column: 1 / -1
+                @media screen and (min-width:992px)
+                    grid-column: 1 / span 2
+                p
+                    font-family: $poppins
+                    font-weight: 400
+                    font-size: 16px
+                    letter-spacing: 0.03em
+                    line-height: 1.5em
+                    color: $grisOscuro4
+                    text-align: left
+                    margin: 2rem 0 0   
+                h1
+                    font-family: $barlow
+                    font-weight: 600
+                    font-size: 42px
+                    letter-spacing: -0.03em
+                    line-height: .95em
+                    color: $negroOscuro2
+                    text-align: left
+                    position: relative
+                    &:before
+                        content: ''
+                        position: absolute
+                        bottom: -1rem
+                        left: 0rem
+                        background: $rojo
+                        height: 8px
+                        width: 85px
+            &:nth-of-type(2)
+                grid-column: 1 / -1
+                margin-top: 2rem
+                @media screen and (min-width:992px)
+                    grid-column: 4 / span 9
+                    margin-top: 0rem
+                .sliderContainer
+                    .owl-prev,
+                    .owl-next
+                        top: 100%
+                        transform: translateY(30%)
+                        @media screen and (min-width: 992px)
+                            top: 50%
+                            transform: translateY(-50%)
+                    .owl-nav,
+                    .owl-prev,
+                    .owl-next
+                        span
+                            opacity: 1
+                        &:hover
+                            span
+                                opacity: 1
+                        &.disabled
+                            span
+                                background: url("/frontend/images/arrow.png")
+                                opacity: .35
+                    .owl-prev
+                        left: auto
+                        right: 3rem
+                        @media screen and (min-width: 992px)
+                            left: -4rem
+                            right: auto
+                    .owl-next
+                        right: 0rem
+                        @media screen and (min-width: 992px)
+                            right: -4rem
+                    .slide
+                        position: relative
+                        height: 362px
+                        overflow: hidden
+                        border-radius: 10px
+                        display: flex
+                        justify-content: flex-end
+                        align-items: flex-start
+                        flex-direction: column
+                        @media screen and (min-width: 992px)
+                            height: 485px
+                        .boxImage
+                            position: absolute
+                            top: 0
+                            left: 0
+                            width: 100%
+                            height: 100%
+                            border: 0px solid $rojo
+                            img
+                                width: 100%
+                                height: 100%
+                                object-fit: cover
+                                aspect-ratio: 2 / 1
+                        .boxInfo
+                            position: relative
+                            z-index: 2
+                            padding: .5rem 1rem 1rem
+                            border: 0px solid $rojo
+                            width: 100%
+                            box-sizing: border-box
+                            a
+                                display: flex
+                                justify-content: flex-end
+                                align-items: center
+                                gap: .5rem
+                                img
+                                    width: 7px
+                                    height: 14px
+                                p
+                                    font-family: $poppins
+                                    font-weight: 600
+                                    font-size: 14px
+                                    line-height: 1.5em
+                                    letter-spacing: -0.02em
+                                    color: white
+                                    text-align: right
+                                    
+                            h2
+                                font-family: $poppins
+                                font-weight: 500
+                                font-size: 22px
+                                line-height: 1.15em
+                                letter-spacing: -0.03em
+                                color: white
+                                text-align: left
+                                position: relative
+                                margin-bottom: 1.25rem
+                                min-height: 35px
+                                &::before
+                                    content: ''
+                                    width: 100%
+                                    height: 2px
+                                    background: $rojo
+                                    position: absolute
+                                    bottom: -.5rem
+                                    left: 0
+            
+.homeBoxIngresado
+    border: 0px solid $rojo
+    padding: 3.5rem 0 2rem
+    .boxCard
+        background: $rojo
+        width: 100%
+        height: 398px
+        background: white
+        border: 1px solid $grisOscuro2
+        border-radius: 18px
+        box-sizing: border-box
+        box-shadow: 0px 20px 60px rgba(0, 0, 0, 0.05)
+        padding: 1.5rem 2rem 1rem
+        @media screen and (min-width: 992px)
+            height: 352px
+        h2
+            font-family: $poppins
+            font-weight: 600
+            font-size: 16px
+            line-height: 1.5em
+            color: $grisOscuro4
+            text-align: left
+        .sliderContainer
+            border: 0px solid $rojo
+            margin: 1rem 0 0
+            padding: 0 0rem
+            @media screen and (min-width: 992px)
+                padding: 0 3rem
+            @media screen and (min-width: 1400px)
+                padding: 0 5rem
+            .owl-nav
+                .owl-prev,
+                .owl-next
+                    top: 100%
+                    transform: translateY(30%)
+                    @media screen and (min-width: 992px)
+                        top: 50%
+                        transform: translateY(-50%)
+                    span
+                        opacity: 1
+                    &:hover
+                        span
+                            opacity: 1
+                .owl-prev
+                    left: auto
+                    right: 3rem
+                    @media screen and (min-width: 992px)
+                        left: -4rem
+                        right: auto
+                .owl-next
+                    right: -.5rem
+                    @media screen and (min-width: 992px)
+                        right: -4rem
+            .owl-carousel
+                .slide
+                    width: 100%
+                    height: 240px
+                    background: $grisOscuro3
+                    border: 1px solid $grisOscuro2
+                    border-radius: 8px
+                    a
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        flex-direction: column
+                        h3
+                            font-family: $poppins
+                            font-weight: 600
+                            font-size: 14px
+                            line-height: 1.15em
+                            color: $negroOscuro
+                            text-align: center
+                        p
+                            font-family: $poppins
+                            font-weight: 600
+                            font-size: 12px
+                            line-height: 1.5em
+                            color: $grisOscuro5
+                            text-transform: uppercase
+                            text-align: center
+                            margin-top: .25rem
+                        .boxImage
+                            margin-bottom: .5rem
+                            margin-top: 1rem
+                            height: 148px
+                            box-sizing: border-box
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            flex-direction: column
+                            overflow: hidden
+                            img 
+                                width: 100%
+                                // aspect-ratio: 1/1
+                                object-fit: contain
+                                height: 100%
+.homePromocion
+    padding: 1rem 0 
+    img
+        width: 100%
+        object-fit: cover

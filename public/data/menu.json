@@ -1,0 +1,75 @@
+[
+    {
+        "categoria": [
+            {
+                "name": "Lockers <br>Metálicos",
+                "slug": "",
+                "id": "" 
+            },
+            {
+                "name": "Lockers <br>de Plástico",
+                "slug": "",
+                "id": "" 
+            },
+            {
+                "name": "Línea <br>Industrial",
+                "slug": "",
+                "id": "" 
+            },
+            {
+                "name": "Línea <br>Mobiliaria",
+                "slug": "",
+                "id": "" 
+            },
+            {
+                "name": "Línea <br>Rimax",
+                "slug": "",
+                "id": "" 
+            },
+            {
+                "name": "Línea <br>Tramontina",
+                "slug": "",
+                "id": "" 
+            },
+            {
+                "name": "Alquiler <br>de Lockers",
+                "slug": "",
+                "id": "" 
+            },
+            {
+                "name": "Lockers <br>Inteligentes",
+                "slug": "",
+                "id": "" 
+            }
+        ]
+    },
+    {
+        "menu": [
+            {
+                "name": "Home",
+                "slug": "/",
+                "id": "1" 
+            },
+            {
+                "name": "Acerca de Maletek",
+                "slug": "/acerca-de-nosotros",
+                "id": "2" 
+            },
+            {
+                "name": "Contáctenos",
+                "slug": "/contactenos",
+                "id": "3" 
+            },
+            {
+                "name": "Catálogo 2023",
+                "slug": "/",
+                "id": "4" 
+            },
+            {
+                "name": "Blog",
+                "slug": "/blog",
+                "id": "5" 
+            }
+        ]
+    }
+]
